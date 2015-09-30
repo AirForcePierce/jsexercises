@@ -34,12 +34,12 @@ answer(2, 6);
 // Write a function named `avg` that takes 3 parameters
 // and returns the average of those 3 numbers.
 
-var avgAnswer = function avg(x, y, z) {
+var avg = function(x, y, z) {
   var total = x + y + z;
   return total / 3;
 }
 
-avgAnswer(3, 6, 9);
+avg(3, 6, 9);
 
 // Q3
 // Write a function called `getLength` that takes one
