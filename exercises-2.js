@@ -45,11 +45,11 @@ function rovarspraket(phrase){
   var newArray = phrase.split('');
   var newStuff = []
   if (newArray.indexOf('a', 'e', 'i', 'o', 'u', ' ') > -1) {
-    var y = newStuff;
-  } else {
-    var y = "o" + newStuff;
-  };
-};
+//     var y = newStuff;
+//   } else {
+//     var y = "o" + newStuff;
+//   };
+// };
 
 
 
@@ -76,12 +76,12 @@ function reverse(x){
 // Write a function findLongestWord() that takes an array of words and returns the length of the longest one.
 // ---------------------
 
-function findLongestWord(words){
-  newArray = words
-  newArray.filter(function doStuff(word) {
-  return word.length > 3;
-  });
-};
+// function findLongestWord(words){
+//   newArray = words
+//   newArray.filter(function doStuff(word) {
+//   return word.length > 3;
+//   });
+// };
 // ---------------------
 // Write a function filterLongWords() that takes an array of words and an integer i and returns the array of words that are longer than i.
 // ---------------------
