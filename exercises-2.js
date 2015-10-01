@@ -30,10 +30,24 @@ function maxOfThree(x, y, z){
 
 function isVowel(char){
   if (char === "a" || char === "e" || char === "i" || char === "o" || char === "u") {
-    return true
+    return true;
   }
   else {
-    return false
+    return false;
+  }
+};
+
+// Class version of code
+
+function isVowel(char){
+
+var vowels = 'aeiou';
+
+  if (vowels.indexOf(char) !== -1) {
+    return true;
+  }
+  else {
+    return false;
   }
 };
 
@@ -41,24 +55,26 @@ function isVowel(char){
 // Write a function translate() that will translate a text into "rÃ¶varsprÃ¥ket". That is, double every consonant and place an occurrence of "o" in between. For example, translate("this is fun") should return the string "tothohisos isos fofunon".
 // ---------------------
 
-function rovarspraket(phrase){
-  var newArray = phrase.split('');
-  var newStuff = []
-  if (newArray.indexOf('a', 'e', 'i', 'o', 'u', ' ') > -1) {
-    var y = newStuff;
-  } else {
-    var y = "o" + newStuff;
-  };
+function rovarspraket(phrase) {
+ var s = phrase.split("");
+ var x = ""
+
+ s.forEach(function(value) {
+    if (value === "a" ||
+        value === "e" ||
+        value === "i" ||
+        value === "o" ||
+        value === "u" ||
+        value === " ")
+     {
+         x = (x + (value));
+     } else {
+         x =  (x + (value + "o" + value));
+     }
+
+ });
+ return x;
 };
-
-
-
-
-
-
-  // var str = phrase;
-  // var vowels = ['a', 'e', 'i', 'o', 'u', ' ']
-  // var x = ''
 
 
 // ---------------------
