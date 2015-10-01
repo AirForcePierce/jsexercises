@@ -42,40 +42,46 @@ function isVowel(char){
 // ---------------------
 
 function rovarspraket(phrase){
-  var str = phrase;
-  var vowels = ['a', 'e', 'i', 'o', 'u', ' ']
-  var x = ''
-  if (vowels.indexOf(str) != -1) {
-    x = x
-  }
-
+  var newArray = phrase.split('');
+  var newStuff = []
+  if (newArray.indexOf('a', 'e', 'i', 'o', 'u', ' ') > -1) {
+    var y = newStuff;
+  } else {
+    var y = "o" + newStuff;
+  };
 };
 
 
 
 
-  if (x !== "a" || "e" || "i" || "o" || "u" || " ") {
-    var mynewArray = x + "o";
-    } else  (x === "a" || "e" || "i" || "o" || "u") {
-    var mynewArray = x;
+
+
+  // var str = phrase;
+  // var vowels = ['a', 'e', 'i', 'o', 'u', ' ']
+  // var x = ''
 
 
 // ---------------------
 // Define a function reverse() that computes the reversal of a string. For example, reverse("jag testar") should return the string "ratset gaj".
 // ---------------------
 
-function reverse(){
-    //...
-}
+function reverse(x){
+  var str = x.split('');
+  var newStuff = str.reverse();
+  var joinStuff = newStuff.join('');
+  return joinStuff.toString();  
+};
 
 // ---------------------
 // Write a function findLongestWord() that takes an array of words and returns the length of the longest one.
 // ---------------------
 
 function findLongestWord(words){
-    //...
-}
-
+  newArray = words
+  newArray.filter(function doStuff(word) {
+  return word.length > 3;
+  });
+};
 // ---------------------
 // Write a function filterLongWords() that takes an array of words and an integer i and returns the array of words that are longer than i.
 // ---------------------
